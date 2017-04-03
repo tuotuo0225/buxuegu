@@ -18,6 +18,6 @@
 	}else{
 		$filename='login';
 	}
-	include('./views/'.$path.'/'.$filename.'.html');
+	include('./view/'.$path.'/'.$filename.'.html');
 	
 ?>
