@@ -34,7 +34,7 @@ define(['jquery','cookie','bootstrap'],function($){
 	//console.log($.cookie('loginInfo'));
 	var obj=JSON.parse($.cookie('loginInfo'));
 	$(".aside .profile img").attr('src',obj.tc_avatar);
-	$(".aside .profileh h4").text(obj.tc_name);
+	$(".aside .profile h4").html(obj.tc_name);
 	//退出功能
 	$('#logout').click(function(){
 		$.ajax({
