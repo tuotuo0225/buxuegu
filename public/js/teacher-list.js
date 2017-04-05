@@ -1,7 +1,9 @@
 /**
  * Created by hasee on 2017/4/3.
  */
-define(['jquery','template','bootstrap'],function($,template){
+define(['jquery','template','tools','bootstrap'],function($,template,tools){
+    //菜单选中功能
+    tools.setMenu(location.pathname);
     $.ajax({
         url:'/api/teacher',
         type:'get',
